@@ -7,7 +7,7 @@
     "altura_cm": "Altura en centímetros",
     "cms": "Centímetros",
     "ayuda_altura": "Introduce una altura válida en <strong>centímetros</strong>",
-    "boton_calcular": "¿Estás gordo?"
+    "boton_calcular": "IMC"
   },
   "results": {
     "estado0": "Normopeso",
