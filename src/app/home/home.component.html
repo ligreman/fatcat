@@ -1,36 +1,88 @@
-<div class="container" fxLayout="column" fxLayoutAlign="center center">
+<div fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutAlign.gt-sm="center stretch" fxLayoutAlign.lt-md="center stretch">
 
-  <form [formGroup]="imcForm" (ngSubmit)="onSubmit()" fxLayout="row">
-    <div>
-
-      <div class="block" fxLayout="row" fxLayoutAlign="center center">
-        <mat-form-field appearance="" fxFlex>
-          <mat-label>{{ 'home.peso_kg' | translate }}</mat-label>
-          <input matInput id="peso" placeholder="{{ 'home.kilos' | translate }}" type="number" formControlName="peso" required min="0" max="500">
-          <mat-icon matSuffix>accessibility_new</mat-icon>
-          <mat-error *ngIf="imcForm.get('peso').hasError('required') || imcForm.get('peso').hasError('min') || imcForm.get('peso').hasError('max')">
-            <span [innerHTML]="'home.ayuda_peso' | translate "></span>
-          </mat-error>
-        </mat-form-field>
-      </div>
-
-
-      <div class="block" fxLayout="row" fxLayoutAlign="center center">
-        <mat-form-field appearance="" fxFlex>
-          <mat-label>{{ 'home.altura_cm' | translate }}</mat-label>
-          <input matInput id="altura" placeholder="{{ 'home.cms' | translate }}" type="number" formControlName="altura" required min="0" max="250">
-          <mat-icon matSuffix>height</mat-icon>
-          <mat-error *ngIf="imcForm.get('altura').hasError('required') || imcForm.get('altura').hasError('min') || imcForm.get('altura').hasError('max')">
-            <span [innerHTML]="'home.ayuda_altura' | translate "></span>
-          </mat-error>
-        </mat-form-field>
-      </div>
-
-      <div class="block" fxLayout="row" fxLayoutAlign="center center">
-        <button mat-flat-button color="accent" type="submit" [disabled]="!imcForm.valid">{{ 'home.boton_calcular' | translate }}</button>
-      </div>
-
+  <div class="text-container" fxFlex.gt-sm="30">
+    <div class="logo">
+      <img src="assets/logo.png"/>
+      <p class="subtitle">{{ 'home.subtitle' | translate }}</p>
     </div>
-  </form>
 
+    <div class="texto">
+      <p class="texto-header">
+        <img src="assets/hang.png"/>
+        Cabecera del texto bla bla
+      </p>
+      <p class="texto-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu. Lorem
+        ipsum
+        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
+    </div>
+
+    <div class="texto">
+      <p class="texto-header">
+        <img src="assets/hang.png"/>
+        Cabecera del texto bla bla
+      </p>
+      <p class="texto-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu. Lorem
+        ipsum
+        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
+    </div>
+  </div>
+
+  <div class="form-container" fxFlex.gt-sm="40" fxFlexOrder.gt-sm="2" fxFlexOrder.lt-md="3"
+       fxLayout="column" fxLayoutAlign="start center" [ngClass.gt-sm]="'min-h'">
+    <div fxFlex.gt-sm="10" fxFlex.lt-md="5"></div>
+
+    <form (ngSubmit)="onSubmit()" [formGroup]="imcForm" fxLayout="row">
+      <div>
+
+        <div fxLayout="row" fxLayoutAlign="center center">
+          <mat-form-field appearance="outline" color="accent" fxFlex>
+            <mat-label>{{ 'home.peso_kg' | translate }}</mat-label>
+            <input formControlName="peso" id="peso" matInput max="500" min="0" placeholder="{{ 'home.kilos' | translate }}" required type="number">
+            <mat-icon color="accent" matSuffix>accessibility_new</mat-icon>
+            <mat-error *ngIf="imcForm.get('peso').hasError('required') || imcForm.get('peso').hasError('min') || imcForm.get('peso').hasError('max')">
+              <span [innerHTML]="'home.ayuda_peso' | translate "></span>
+            </mat-error>
+          </mat-form-field>
+        </div>
+
+
+        <div fxLayout="row" fxLayoutAlign="center center">
+          <mat-form-field appearance="outline" color="accent" fxFlex>
+            <mat-label>{{ 'home.altura_cm' | translate }}</mat-label>
+            <input formControlName="altura" id="altura" matInput max="250" min="0" placeholder="{{ 'home.cms' | translate }}" required type="number">
+            <mat-icon color="accent" matSuffix>height</mat-icon>
+            <mat-error *ngIf="imcForm.get('altura').hasError('required') || imcForm.get('altura').hasError('min') || imcForm.get('altura').hasError('max')">
+              <span [innerHTML]="'home.ayuda_altura' | translate "></span>
+            </mat-error>
+          </mat-form-field>
+        </div>
+
+        <!--<div class="block" fxLayout="row" fxLayoutAlign.gt-sm="center center" fxLayoutAlign.lt-md="start center">
+          <button [disabled]="!imcForm.valid" color="accent" mat-flat-button type="submit">{{ 'home.boton_calcular' | translate }}</button>
+        </div>-->
+
+      </div>
+
+      <div class="boton-go" fxLayout="row" fxLayoutAlign="center center">
+        <button [disabled]="!imcForm.valid" color="primary" mat-mini-fab type="submit">
+          <mat-icon>directions_run</mat-icon>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div class="text-container" fxFlex.gt-sm="30" fxFlexOrder.gt-sm="3" fxFlexOrder.lt-md="2" fxLayoutAlign="center center">
+    <div class="texto">
+      <p class="texto-header">
+        <img src="assets/hang.png"/>
+        Cabecera del texto bla bla
+      </p>
+      <p class="texto-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu. Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
+      <p class="texto-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu. Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
+      <p class="texto-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu. Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
+    </div>
+  </div>
 </div>

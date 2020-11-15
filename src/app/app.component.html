@@ -1,8 +1,10 @@
-<router-outlet></router-outlet>
+<div class="main-containter" fxLayout="column">
+  <router-outlet></router-outlet>
 
-<div>
-  <div class="footer" fxLayout="row" fxLayoutAlign="space-around center">
-    <a>Uno</a>
-    <button mat-button (click)="openLicenses()">{{ 'footer.licenses' | translate }}</button>
+  <div fxFlex="10">
+    <div class="footer" fxLayout="row" fxLayoutAlign="space-around center">
+      <a>Uno</a>
+      <button color="primary" (click)="openLicenses()" mat-button>{{ 'footer.licenses' | translate }}</button>
+    </div>
   </div>
 </div>

@@ -4,7 +4,7 @@
 
 .header {
   color: rgba(77, 182, 172, 1);
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   letter-spacing: 2px;
 }
@@ -41,7 +41,6 @@
   font-size: 1.5rem;
   font-weight: bold;
   color: #00695C;
-
 }
 
 .card-item {
@@ -49,7 +48,7 @@
 }
 
 .avatar {
-  border: 10px double #4CAF50;
+  border: 10px double #00695C;
   border-radius: 500px;
   overflow: hidden;
   width: 20rem;

@@ -1,7 +1,48 @@
-.block {
-  margin: 20px 0;
+.logo {
+  padding: 2rem 1.5rem 1rem 1.5rem;
 }
 
-.container {
-  height: 80vh;
+.logo img {
+  width: 100%;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: center;
+  letter-spacing: 2px;
+  opacity: .5;
+}
+
+.form-container {
+  background-image: url("../../assets/back-form2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: initial;
+  background-position-y: initial;
+  background-position-x: center;
+}
+
+.texto {
+  font-family: 'Handlee', Roboto, "Helvetica Neue", sans-serif;
+  padding: 1rem;
+}
+
+.texto-header {
+  font-size: 1.5rem;
+  color: #00695C;
+}
+
+.texto-header img {
+  width: 30px;
+}
+
+.boton-go {
+  margin-bottom: .25em;
+  margin-left: 1rem;
+  padding-bottom: 1.34375em;
+}
+
+.min-h {
+  min-height: 93vh;
 }
