@@ -1,0 +1,36 @@
+<div class="container" fxLayout="column" fxLayoutAlign="center center">
+
+  <form [formGroup]="imcForm" (ngSubmit)="onSubmit()" fxLayout="row">
+    <div>
+
+      <div class="block" fxLayout="row" fxLayoutAlign="center center">
+        <mat-form-field appearance="" fxFlex>
+          <mat-label>{{ 'home.peso_kg' | translate }}</mat-label>
+          <input matInput id="peso" placeholder="{{ 'home.kilos' | translate }}" type="number" formControlName="peso" required min="0" max="500">
+          <mat-icon matSuffix>accessibility_new</mat-icon>
+          <mat-error *ngIf="imcForm.get('peso').hasError('required') || imcForm.get('peso').hasError('min') || imcForm.get('peso').hasError('max')">
+            <span [innerHTML]="'home.ayuda_peso' | translate "></span>
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+
+      <div class="block" fxLayout="row" fxLayoutAlign="center center">
+        <mat-form-field appearance="" fxFlex>
+          <mat-label>{{ 'home.altura_cm' | translate }}</mat-label>
+          <input matInput id="altura" placeholder="{{ 'home.cms' | translate }}" type="number" formControlName="altura" required min="0" max="250">
+          <mat-icon matSuffix>height</mat-icon>
+          <mat-error *ngIf="imcForm.get('altura').hasError('required') || imcForm.get('altura').hasError('min') || imcForm.get('altura').hasError('max')">
+            <span [innerHTML]="'home.ayuda_altura' | translate "></span>
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="block" fxLayout="row" fxLayoutAlign="center center">
+        <button mat-flat-button color="accent" type="submit" [disabled]="!imcForm.valid">{{ 'home.boton_calcular' | translate }}</button>
+      </div>
+
+    </div>
+  </form>
+
+</div>

@@ -1,0 +1,61 @@
+{
+  "home": {
+    "peso_kg": "Peso en kilos",
+    "kilos": "Kilogramos",
+    "ayuda_peso": "Introduce un peso válido en <strong>kilos</strong>",
+    "altura_cm": "Altura en centímetros",
+    "cms": "Centímetros",
+    "ayuda_altura": "Introduce una altura válida en <strong>centímetros</strong>",
+    "boton_calcular": "¿Estás gordo?"
+  },
+  "results": {
+    "estado0": "Normopeso",
+    "estado1": "Sobrepeso",
+    "estado2": "Obesidad I",
+    "estado3": "Obesidad II",
+    "estado4": "Obesidad mórbida",
+    "consejos": {
+      "titulo": "Consejos de tu enfermer@",
+      "texto0": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu",
+      "texto1": "Hola",
+      "texto2": "Hola",
+      "texto3": "Hola",
+      "texto4": "Hola"
+    },
+    "enfermedades": {
+      "titulo": "Consecuencias y enfermedades",
+      "texto0": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu",
+      "texto1": "Hola",
+      "texto2": "Hola",
+      "texto3": "Hola",
+      "texto4": "Hola"
+    },
+    "vida": {
+      "titulo": "Estilo de vida",
+      "texto0": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu",
+      "texto1": "Hola",
+      "texto2": "Hola",
+      "texto3": "Hola",
+      "texto4": "Hola"
+    },
+    "dieta_propuesta": {
+      "titulo": "Hábitos dietéticos propuestos",
+      "texto0": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu",
+      "texto1": "Hola",
+      "texto2": "Hola",
+      "texto3": "Hola",
+      "texto4": "Hola"
+    },
+    "dieta_modificable": {
+      "titulo": "Hábitos dietéticos modificables",
+      "texto0": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu",
+      "texto1": "Hola",
+      "texto2": "Hola",
+      "texto3": "Hola",
+      "texto4": "Hola"
+    }
+  },
+  "footer": {
+    "licenses": "Licencias y autores"
+  }
+}

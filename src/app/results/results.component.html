@@ -1,0 +1,106 @@
+<div class="container margin-bottom" fxLayout="column">
+
+  <div class="header-container" fxLayout="row" fxLayoutAlign="space-between end">
+    <div fxFlex="10">
+      <button [routerLink]="['/home']" color="primary" mat-icon-button>
+        <mat-icon>arrow_back</mat-icon>
+      </button>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="center end">
+      <p class="header">{{ 'results.estado' + id | translate }}</p>
+    </div>
+
+    <div fxFlex="10"></div>
+  </div>
+
+  <div fxFlex fxLayout="column" fxLayoutAlign="center stretch">
+    <div fxLayout="row" fxLayoutAlign="center center" fxShow.gt-sm="false" fxShow.lt-md="true">
+      <div class="avatar avatar-mini">
+        <img [src]="catImg"/>
+      </div>
+    </div>
+
+    <div fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutAlign="center center">
+      <div class="card-big">
+        <p class="card-title">
+          <img src="../../assets/dolor.png"/>
+          {{ 'results.enfermedades.titulo' | translate }}
+        </p>
+        <ul>
+          <li class="card-item">{{ 'results.enfermedades.texto0' | translate }}</li>
+          <li class="card-item">{{ 'results.enfermedades.texto1' | translate }}</li>
+          <li class="card-item">{{ 'results.enfermedades.texto2' | translate }}</li>
+          <li class="card-item">{{ 'results.enfermedades.texto3' | translate }}</li>
+          <li class="card-item">{{ 'results.enfermedades.texto4' | translate }}</li>
+        </ul>
+      </div>
+    </div>
+
+    <div fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutAlign="space-around center">
+      <div [ngClass.gt-sm]="'card'" [ngClass.lt-md]="'card-big'">
+        <p class="card-title">
+          <img src="../../assets/enfermera_b.png"/>
+          {{ 'results.consejos.titulo' | translate }}
+        </p>
+        <ul>
+          <li class="card-item">{{ 'results.consejos.texto0' | translate }}</li>
+          <li class="card-item">{{ 'results.consejos.texto1' | translate }}</li>
+          <li class="card-item">{{ 'results.consejos.texto2' | translate }}</li>
+          <li class="card-item">{{ 'results.consejos.texto3' | translate }}</li>
+          <li class="card-item">{{ 'results.consejos.texto4' | translate }}</li>
+        </ul>
+      </div>
+
+      <div class="avatar" fxShow.gt-sm="true" fxShow.lt-md="false">
+        <img [src]="catImg"/>
+      </div>
+
+      <div [ngClass.gt-sm]="'card'" [ngClass.lt-md]="'card-big'">
+        <p class="card-title">
+          <img src="../../assets/ejercicio_b.png"/>
+          {{ 'results.vida.titulo' | translate }}
+        </p>
+        <ul>
+          <li class="card-item">{{ 'results.vida.texto0' | translate }}</li>
+          <li class="card-item">{{ 'results.vida.texto1' | translate }}</li>
+          <li class="card-item">{{ 'results.vida.texto2' | translate }}</li>
+          <li class="card-item">{{ 'results.vida.texto3' | translate }}</li>
+          <li class="card-item">{{ 'results.vida.texto4' | translate }}</li>
+        </ul>
+      </div>
+    </div>
+
+    <div fxLayout.gt-sm="row" fxLayout.lt-md="column" fxLayoutAlign="space-around center">
+      <div class="card-big">
+        <p class="card-title">
+          <img src="../../assets/alimentos-saludables_b.png"/>
+          {{ 'results.dieta_propuesta.titulo' | translate }}
+        </p>
+        <ul>
+          <li class="card-item">{{ 'results.dieta_propuesta.texto0' | translate }}</li>
+          <li class="card-item">{{ 'results.dieta_propuesta.texto1' | translate }}</li>
+          <li class="card-item">{{ 'results.dieta_propuesta.texto2' | translate }}</li>
+          <li class="card-item">{{ 'results.dieta_propuesta.texto3' | translate }}</li>
+          <li class="card-item">{{ 'results.dieta_propuesta.texto4' | translate }}</li>
+        </ul>
+      </div>
+
+      <div class="card-big">
+        <p class="card-title">
+          <img src="../../assets/hamburguesa_b.png"/>
+          {{ 'results.dieta_modificable.titulo' | translate }}
+        </p>
+        <ul>
+          <li class="card-item">{{ 'results.dieta_modificable.texto0' | translate }}</li>
+          <li class="card-item">{{ 'results.dieta_modificable.texto1' | translate }}</li>
+          <li class="card-item">{{ 'results.dieta_modificable.texto2' | translate }}</li>
+          <li class="card-item">{{ 'results.dieta_modificable.texto3' | translate }}</li>
+          <li class="card-item">{{ 'results.dieta_modificable.texto4' | translate }}</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,74 @@
+.fixed {
+  position: fixed;
+}
+
+.header {
+  color: rgba(77, 182, 172, 1);
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.header-container {
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 100vw;
+  /*height: 90vh;*/
+}
+
+.card {
+  max-width: 20rem;
+}
+
+.card-big {
+  max-width: 25rem;
+}
+
+.card-title img {
+  width: 48px;
+  height: 48px;
+  vertical-align: text-bottom;
+}
+
+.header, .card-title, .card-item {
+  font-family: 'Handlee', Roboto, "Helvetica Neue", sans-serif;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00695C;
+
+}
+
+.card-item {
+  font-size: 1.1rem;
+}
+
+.avatar {
+  border: 10px double #4CAF50;
+  border-radius: 500px;
+  overflow: hidden;
+  width: 20rem;
+  height: 20rem;
+}
+
+.avatar img {
+  height: 20rem;
+}
+
+.avatar.avatar-mini {
+  width: 15rem;
+  height: 15rem;
+}
+
+.avatar.avatar-mini img {
+  height: 15rem;
+}
+
+.margin-bottom{
+  margin-bottom: 50px;
+}

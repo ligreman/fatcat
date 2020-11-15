@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Handlee';
+  src: url('assets/Handlee-Regular.woff2') format('woff2'),
+  url('assets/Handlee-Regular.woff') format('woff'),
+  url('assets/Handlee-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  /*background: rgb(77,182,172);*/
+  /*background: linear-gradient(180deg, rgba(77,182,172,1) 0%, rgba(178,223,219,1) 25%, rgba(224,242,241,1) 50%, rgba(255,255,255,1) 100%);*/
+
+  background: rgb(77,182,172);
+  background: linear-gradient(0deg, rgba(77,182,172,1) 0%, rgba(178,223,219,1) 20%, rgba(224,242,241,1) 40%, rgba(255,255,255,1) 50%);
+  /*background: rgb(77,182,172);*/
+  /*background: linear-gradient(180deg, rgba(77,182,172,1) 0%, rgba(178,223,219,1) 20%, rgba(224,242,241,1) 40%, rgba(255,255,255,1) 50%, rgba(224,242,241,1) 60%, rgba(178,223,219,1) 80%, rgba(77,182,172,1) 100%);*/
+  background-attachment: fixed;
+}
+
+
+.footer {
+  /*height: 10vh;*/
+  margin-top: 1rem;
+  border-top: 2px solid #26A69A;
+  padding: 5px 0;
+}
